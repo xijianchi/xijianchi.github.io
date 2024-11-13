@@ -1,35 +1,55 @@
 ---
-title: Home
+title: 首页
 layout: home
+nav_order: 1
+
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+这是我的第二个个人博客了，**洗剑池**，之前的一个只发了两篇文章便无疾而终。希望这次能坚持得更久一些。
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+> 
+> 白日不到处，青春恰自来。
+>
+> 苔花如米小，也学牡丹开。
 
-More specifically, the created site:
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## 我是谁
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+我是 Alvin ，文科，人力资源专业。工作了14年。
 
-To get started with creating a site, simply:
+* **初入职场**：前五年，先后在两家传统工业企业做人力资源工作，主要工作是招聘。
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+* **转型**：第六至第七年，从甲方向乙方，转型做 HR SaaS 业务和人才评估，历任项目经理和客户成功经理，主要与大型工业企业和银行的人力资源部门合作。
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+* **跨界**：第八至第九年，跨入大数据行为分析领域，继续担任客户成功经理，服务对象扩展到市场、营销、产品、数据分析团队。这是我职业生涯中最具挑战性，也是成长最快的时期。
 
-----
+* **回归**：第十至第十三年，重返HR SaaS领域，继续我的客户成功经理生涯。主要负责续费和增购，业务还算顺利。
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+* **转折**：第十四个年头，面对公司业绩下滑的情况，我选择离开，转而投身AI招聘业务，管理售后团队。尽管业务熟悉，但团队的整体能力情况和个人生活需求让我重新考虑职业道路，最终决定再次离开。
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+* **现在**：过去四个月，我专注于家庭和个人生活，同时学习一些自己感兴趣的东西，寻找创业机会。
+
+
+## 本博客主要记录一些我个人的兴趣爱好
+
+### 1. 编程
+
+在自学iOS编程，原动力是想开发一个信鸽族谱记录的小APP，也计划学一学Python。会记录一些关键的学习节点，但不会过多描述，以免博客变成学习流水账。
+	
+### 2. 中医知识
+
+随着年龄的增长，开始关注健康，特别是中医领域，包括按摩、养生、针灸和推拿。我会分享一些学习心得。
+	
+### 3. 客户成功
+ 	
+尽管 SaaS 在国内的热度有所减退，但从企业经营、商业思考、架构设计等方面，仍有很多值得沉淀的内容。
+ 	
+---
+ 	
+> 	
+>	如果你对上述内容也有兴趣，欢迎联系交流，真诚探讨。
+>	WeChat：WWFuZ3ppSW5zaWdodHMgPDwtLSB7ICsgfSDZqSggJ8+JJyAp2Yg=
+>	Email：eyArIH0g2akoICfPiScgKdmIIHZjZmdlckBmb3htYWlsLmNvbQ==
+>	<<-- { + } ٩( 'ω' )و 
+>  

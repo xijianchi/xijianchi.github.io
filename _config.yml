@@ -1,8 +1,127 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: 洗剑池
+description: 欲买桂花同载酒，终不似，少年游。
 theme: just-the-docs
-
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: https://just-the-docs.github.io
 
+permalink: pretty
+
+defaults:
+  - scope:
+      path: "docs" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
+# Aux links for the upper right navigation 右上角跳转链接
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  " My GitHub":
+    - "https://github.com/xiyanzhai"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Enable or disable the side/mobile menu globally 自动收起左侧栏以适应手机屏幕
+# Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
+nav_enabled: true
+
+
+# Sort order for navigation links 搜索大小写敏感
+# nav_sort: case_insensitive # default, equivalent to nil
+nav_sort: case_sensitive # Capital letters sorted before lowercase
+# Show navigation error report
+nav_error_report: true # default is false/nil.
+
+
+# External navigation links 左侧栏目录最后加跳转链接
+# nav_external_links:
+#   - title: Just the Docs on GitHub
+#    url: https://github.com/just-the-docs/just-the-docs
+
+
+liquid:
+  error_mode: strict
+  strict_filters: true
+
+# Footer content 屏幕底部脚注
+# appears at the bottom of every page's main content
+
+# Back to top link 回到顶部快捷按钮
+back_to_top: true
+back_to_top_text: "回到顶部"
+
+# 脚注
+footer_content: '🐻 洗剑池,一个客户成功从业者的记录集 | Crafted by Alvin Y with 💖'
+
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+color_scheme: nil
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+
+# Enable or disable the site search 搜索栏
+# Supports true (default) or false
+search_enabled: true
+
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 2
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+  
+  
+  # For copy button on code 快捷复制代码按钮
+enable_copy_code_button: true
+
+
+# By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in 图表支持
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.6"
+  # Put any additional configuration, such as setting the theme, in _includes/mermaid_config.js
+  # See also docs/ui-components/code
+  # To load mermaid from a local library, also use the `path` key to specify the location of the library; e.g.
+  # for (v10+):
+  # path: "/assets/js/mermaid.esm.min.mjs"
+  # for (<v10):
+  # path: "/assets/js/mermaid.min.js"
+  # Note: copy both `mermaid.esm.min.mjs` (v10+) or `mermaid.min.js` (<v10) and the associated `.map` file from the specified version of `mermaid/dist` to `/assets/js/`.
+  
+  
+  # Enable or disable heading anchors 标题锚点
+heading_anchors: true
+

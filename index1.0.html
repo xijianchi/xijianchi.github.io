@@ -5,35 +5,20 @@
     <title>柒么斯的飞地</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="专业与思考的交汇处">
-    <meta name="keywords" content="柒么斯, 思考, HR科技, 客户成功, 数据分析, AI应用"/>
+    <meta name="keywords" content="柒么斯, 哲学, 思考, HR科技, 工作技能, 客户成功, 数据分析, AI应用"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="referrer" content="no-referrer"/>
-    
-    <!-- PWA 支持 -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#42b983">
     
     <!-- 添加网站图标 -->
     <link rel="icon" href="_media/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="_media/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="_media/apple-touch-icon.png">
     
-    <!-- 使用本地文件 -->
-    <link rel="stylesheet" href="./lib/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
     <!-- 添加侧边栏折叠插件样式 -->
-    <link rel="stylesheet" href="./lib/sidebar.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css"/>
     <!-- 添加自定义样式 -->
     <style>
-        /* 使用系统默认字体，避免加载外部字体 */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", 
-                "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Arial, sans-serif;
-        }
-        
-        pre, code {
-            font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-        }
-        
         /* 增加封面页标题粗细 */
         .cover-main h1 {
             font-weight: 700 !important;
@@ -124,14 +109,8 @@
             // 启用封面页
             coverpage: true,
             
-            // 自动为页面添加标题
-            autoHeader: true,
-            
             // 添加auto2top配置，切换页面后自动跳转到页面顶部
             auto2top: true,
-            
-            // 设置锚点滚动时距离顶部的距离
-            topMargin: 70, // 单位为像素
             
             // 基础搜索配置
             search: {
@@ -153,24 +132,8 @@
             // 阅读进度条配置
             progress: {
                 position: "top",
-                color: "#42b983",
+                color: "var(--theme-color,#42b983)",
                 height: "3px",
-            },
-            
-            // 字数统计配置
-            count:{
-                countable: true,
-                position: 'top',
-                margin: '10px',
-                float: 'right',
-                fontsize: '0.9em',
-                color: 'rgb(90,90,90)',
-                language: 'chinese',
-                localization: {
-                    words: "",
-                    minute: ""
-                },
-                isExpected: true
             },
             
             // 添加页脚插件
@@ -190,24 +153,14 @@
             ]
         }
     </script>
-    <!-- 使用本地文件 -->
-    <script src="./lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
     <!-- 添加基础搜索插件 -->
-    <script src="./lib/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <!-- 添加侧边栏折叠插件 -->
-    <script src="./lib/docsify-sidebar-collapse.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
     <!-- 添加复制代码按钮插件 -->
-    <script src="./lib/docsify-copy-code.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <!-- 添加阅读进度条插件 -->
-    <script src="./lib/docsify-progress.min.js"></script>
-    <!-- 添加字数统计插件 -->
-    <script src="./lib/countable.js"></script>
-    
-    <!-- 添加离线支持 -->
-    <script>
-        if (typeof navigator.serviceWorker !== 'undefined') {
-            navigator.serviceWorker.register('sw.js')
-        }
-    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
 </body>
 </html>

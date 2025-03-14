@@ -129,26 +129,23 @@
       background-color: #42b983;
     }
     
-    /* 确保移动端侧边栏触发器正常工作 */
+    /* 确保侧边栏切换按钮可见且可点击 */
     .sidebar-toggle {
-      position: absolute;
-      top: 0;
-      bottom: auto;
-      left: 0;
-      padding: 10px;
-      transition: opacity .3s;
-      opacity: .8;
-      cursor: pointer;
-      z-index: 30;
+      display: block !important;
+      cursor: pointer !important;
+      opacity: 1 !important;
+      z-index: 1000 !important;
     }
     
-    @media (max-width: 768px) {
+    /* 确保侧边栏在移动设备上正常显示 */
+    @media screen and (max-width: 768px) {
       .sidebar-toggle {
-        display: block !important;
+        padding: 10px !important;
       }
       
-      body.close .sidebar-toggle {
-        width: auto;
+      .sidebar-toggle span {
+        background-color: #42b983 !important;
+        display: block !important;
       }
     }
   </style>
@@ -229,5 +226,28 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
   <!-- 侧边栏折叠插件 - 按照官方文档引入 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  
+  <!-- 添加自定义脚本修复汉堡包按钮 -->
+  <script>
+    // 等待页面完全加载
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        // 获取汉堡包按钮
+        var toggle = document.querySelector('.sidebar-toggle');
+        if (toggle) {
+          // 移除现有事件监听器
+          var newToggle = toggle.cloneNode(true);
+          toggle.parentNode.replaceChild(newToggle, toggle);
+          
+          // 添加新的事件监听器
+          newToggle.addEventListener('click', function(e) {
+            // 切换body类，控制侧边栏显示/隐藏
+            document.body.classList.toggle('close');
+            e.stopPropagation();
+          });
+        }
+      }, 1000); // 延迟1秒确保Docsify完全加载
+    });
+  </script>
 </body>
 </html>

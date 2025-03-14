@@ -27,8 +27,6 @@ const STATIC_RESOURCES = [
   '/lib/sidebar.min.css',
   '/lib/docsify-sidebar-collapse.min.js',
   '/lib/docsify-copy-code.min.js',
-  '/lib/docsify-progress.min.js',
-  '/lib/countable.js',
   '/_media/favicon.ico',
   '/_media/apple-touch-icon.png'
 ];
@@ -56,7 +54,15 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        return cache.addAll(STATIC_RESOURCES);
+        // 尝试缓存每个资源，但忽略失败的资源
+        return Promise.allSettled(
+          STATIC_RESOURCES.map(url => 
+            cache.add(url).catch(err => {
+              console.warn(`无法缓存资源: ${url}`, err);
+              return null; // 继续处理其他资源
+            })
+          )
+        );
       })
   );
 });

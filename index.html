@@ -150,29 +150,6 @@
                 successText: '已复制'
             },
             
-            // 阅读进度条配置
-            progress: {
-                position: "top",
-                color: "#42b983",
-                height: "3px",
-            },
-            
-            // 字数统计配置
-            count:{
-                countable: true,
-                position: 'top',
-                margin: '10px',
-                float: 'right',
-                fontsize: '0.9em',
-                color: 'rgb(90,90,90)',
-                language: 'chinese',
-                localization: {
-                    words: "",
-                    minute: ""
-                },
-                isExpected: true
-            },
-            
             // 添加页脚插件
             plugins: [
                 function(hook) {
@@ -198,10 +175,6 @@
     <script src="./lib/docsify-sidebar-collapse.min.js"></script>
     <!-- 添加复制代码按钮插件 -->
     <script src="./lib/docsify-copy-code.min.js"></script>
-    <!-- 添加阅读进度条插件 -->
-    <script src="./lib/docsify-progress.min.js"></script>
-    <!-- 添加字数统计插件 -->
-    <script src="./lib/countable.js"></script>
     
     <!-- 添加离线支持 -->
     <script>

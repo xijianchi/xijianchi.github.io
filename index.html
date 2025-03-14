@@ -150,6 +150,13 @@
                 successText: '已复制'
             },
             
+            // 阅读进度条配置
+            progress: {
+                position: "top",
+                color: "#42b983",
+                height: "3px",
+            },
+            
             // 添加页脚插件
             plugins: [
                 function(hook) {
@@ -175,6 +182,8 @@
     <script src="./lib/docsify-sidebar-collapse.min.js"></script>
     <!-- 添加复制代码按钮插件 -->
     <script src="./lib/docsify-copy-code.min.js"></script>
+    <!-- 添加阅读进度条插件 -->
+    <script src="./lib/docsify-progress.min.js"></script>
     
     <!-- 添加离线支持 -->
     <script>

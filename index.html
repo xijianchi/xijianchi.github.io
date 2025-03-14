@@ -129,37 +129,31 @@
       background-color: #42b983;
     }
     
-    /* 添加侧边栏折叠相关样式 */
-    .sidebar-nav li {
-      position: relative;
-      margin: 0;
-      cursor: pointer;
-    }
-    
-    .sidebar-nav ul:not(.app-sub-sidebar) > li:not(.file)::before {
-      content: '';
-      display: block;
+    /* 确保移动端侧边栏触发器正常工作 */
+    .sidebar-toggle {
       position: absolute;
-      top: 11px;
-      left: -12px;
-      height: 6px;
-      width: 6px;
-      border-right: 1px solid #505d6b;
-      border-bottom: 1px solid #505d6b;
-      transform: rotate(-45deg);
-      transition: transform 0.1s;
+      top: 0;
+      bottom: auto;
+      left: 0;
+      padding: 10px;
+      transition: opacity .3s;
+      opacity: .8;
+      cursor: pointer;
+      z-index: 30;
     }
     
-    .sidebar-nav ul:not(.app-sub-sidebar) > li.open::before {
-      transform: rotate(45deg);
-    }
-    
-    .sidebar-nav ul:not(.app-sub-sidebar) > li.collapse::before {
-      transform: rotate(-45deg);
+    @media (max-width: 768px) {
+      .sidebar-toggle {
+        display: block !important;
+      }
+      
+      body.close .sidebar-toggle {
+        width: auto;
+      }
     }
   </style>
 </head>
-<body class="sidebar-chevron-right">
+<body>
   <div id="app"></div>
   <script>
     window.$docsify = {

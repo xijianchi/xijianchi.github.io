@@ -2,6 +2,8 @@
 
 本栏目收集整理工作中常用的技术工具和方法。
 
-1. [AI应用](/02-WorkTech/AI/) - 人工智能在工作中的应用
-2. [PPT技巧](/02-WorkTech/PPT/) - 专业PPT设计与制作方法
-3. [Excel技巧](/02-WorkTech/EXCEL/) - Excel高效使用方法与技巧
+1. **AI应用** - 人工智能在工作中的应用
+	* [ 担心被AI替代？思考力让你不可替代](/02-WorkTech/01-CriticalThinkingSkills.md)
+2. **PPT** - 工作中实用的PPT技术
+	 * [以故事为中心打造有说服力的演示](/02-WorkTech/PPT/以故事为中心打造有说服力的演示.md)
+

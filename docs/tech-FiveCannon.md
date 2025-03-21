@@ -1,4 +1,4 @@
-# 以故事为中心：打造有说服力的演示
+## 引言
 ￼你有没有发现，市面上的PPT课程总在教些华丽的外表：酷炫动画、精美配色、复杂图表，却很少关注内容本质？
 
 而现实中，决策者只关心一点：”别绕弯子，直接讲重点。”这说明了什么？PPT的核心不是设计，而是故事。
@@ -76,8 +76,8 @@ PPT上只放简洁的标题、少量要点和有意义的图表，不要密密�
 
 ### 5. 从故事到精彩演示
 最后开始你的精彩演示吧！
-![the-powerpoint-spiral](../images/the-powerpoint-spiral.png)
-![the-rhetoric-canon-extended](../images/the-rhetoric-canon-extended.png)
+![the-powerpoint-spiral](./images/the-powerpoint-spiral.png)
+![the-rhetoric-canon-extended](./images/the-rhetoric-canon-extended.png)
 
 ## 总结
 我们已经学习了以故事为中心的五步法，让我们简单回顾一下：

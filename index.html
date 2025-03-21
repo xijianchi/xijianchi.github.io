@@ -115,6 +115,8 @@
         window.$docsify = {
             name: '<span style="font-weight: 700; font-size: 1.5rem;">柒么斯的飞地</span>',
             repo: '', // 设置为空，移除 GitHub 链接
+            // 添加基础路径配置，指向docs文件夹
+            basePath: 'docs/',
             // 加载侧边栏
             loadSidebar: true,
             // 显示目录层级
@@ -132,6 +134,13 @@
             
             // 设置锚点滚动时距离顶部的距离
             topMargin: 70, // 单位为像素
+            
+            // 图片缩放配置
+            zoomImage: {
+                marginAndPadding: 16,
+                bgColor: '#ffffff',
+                borderRadius: 4
+            },
             
             // 基础搜索配置
             search: {
@@ -184,6 +193,8 @@
     <script src="./lib/docsify-copy-code.min.js"></script>
     <!-- 添加阅读进度条插件 -->
     <script src="./lib/docsify-progress.min.js"></script>
+    <!-- 添加图片缩放插件 -->
+    <script src="./lib/zoom-image.min.js"></script>
     
     <!-- 添加离线支持 -->
     <script>

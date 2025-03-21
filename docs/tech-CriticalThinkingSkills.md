@@ -1,6 +1,6 @@
 
 ---
-![AI大脑](../images/aibrain.png)
+![AI大脑](./images/aibrain.png)
 
 ## 引言
 

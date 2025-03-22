@@ -1,4 +1,3 @@
-<!-- _coverpage.md -->
 
 ![logo](_media/icon.svg)
 

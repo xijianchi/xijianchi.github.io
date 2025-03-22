@@ -14,9 +14,9 @@
     <meta name="theme-color" content="#42b983">
     
     <!-- 添加网站图标 -->
-    <link rel="icon" href="_media/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="_media/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="_media/apple-touch-icon.png">
+    <link rel="icon" href="docs/_media/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="docs/_media/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="docs/_media/apple-touch-icon.png">
     
     <!-- 使用本地文件 -->
     <link rel="stylesheet" href="./lib/vue.css">
@@ -39,9 +39,16 @@
             font-weight: 700 !important;
         }
         
-        /* 增加侧边栏网站名称粗细 */
+        /* 隐藏原始文本 */
         .app-name-link {
-            font-weight: 700 !important;
+            font-size: 0 !important; /* 将文字大小设为0 */
+            position: relative;
+            display: block;
+            height: 25px;
+            background-image: url('docs/_media/sidename.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
         }
         
         /* 导航链接特殊样式 */
@@ -113,7 +120,7 @@
     <div id="app"></div>
     <script>
         window.$docsify = {
-            name: '<span style="font-weight: 700; font-size: 1.5rem;">柒么斯的飞地</span>',
+            name: '柒么斯的飞地', // 保留原始名称，但会通过CSS隐藏并替换为背景图片
             repo: '', // 设置为空，移除 GitHub 链接
             // 添加基础路径配置，指向docs文件夹
             basePath: 'docs/',

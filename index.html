@@ -250,20 +250,5 @@
             navigator.serviceWorker.register('sw.js')
         }
     </script>
-    
-    <!-- 调试代码 -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-                const toggleBtn = document.querySelector('.sidebar-toggle');
-                if (toggleBtn) {
-                    console.log('找到汉堡包按钮');
-                    toggleBtn.style.border = '2px solid red';
-                } else {
-                    console.log('未找到汉堡包按钮');
-                }
-            }, 1000);
-        });
-    </script>
 </body>
 </html>

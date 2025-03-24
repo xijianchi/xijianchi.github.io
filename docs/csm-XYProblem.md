@@ -14,7 +14,7 @@
 
 ## 什么是 XY Problem？
 
-根据[维基百科](https://en.wikipedia.org/wiki/XY_problem)的定义，XY Problem 是一种常见的沟通误区，其典型表现是：当一个人遇到问题 X，他认为 Y 是解决 X 的方法，于是去询问如何实现 Y，而不是直接询问如何解决 X。这导致讨论集中在解决方案 Y 上，而非真正的问题 X 上。
+根据[维基百科](https://en.wikipedia.org/wiki/XY_problem)的解释，XY Problem 是一种常见的沟通误区，其典型表现是：当一个人遇到问题 X，他认为 Y 是解决 X 的方法，于是去询问如何实现 Y，而不是直接询问如何解决 X。这导致讨论集中在解决方案 Y 上，而非真正的问题 X 上。
 
 维基百科对 XY Problem 的定义如下：
 

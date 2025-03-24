@@ -216,13 +216,6 @@
                 successText: '已复制'
             },
             
-            // 阅读进度条配置
-            progress: {
-                position: "top",
-                color: "#42b983",
-                height: "3px",
-            },
-            
             // 添加页脚插件
             plugins: [
                 function(hook) {
@@ -248,8 +241,6 @@
     <script src="./lib/docsify-sidebar-collapse.min.js"></script>
     <!-- 添加复制代码按钮插件 -->
     <script src="./lib/docsify-copy-code.min.js"></script>
-    <!-- 添加阅读进度条插件 -->
-    <script src="./lib/docsify-progress.min.js"></script>
     <!-- 添加图片缩放插件 -->
     <script src="./lib/zoom-image.min.js"></script>
     
@@ -258,6 +249,21 @@
         if (typeof navigator.serviceWorker !== 'undefined') {
             navigator.serviceWorker.register('sw.js')
         }
+    </script>
+    
+    <!-- 调试代码 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const toggleBtn = document.querySelector('.sidebar-toggle');
+                if (toggleBtn) {
+                    console.log('找到汉堡包按钮');
+                    toggleBtn.style.border = '2px solid red';
+                } else {
+                    console.log('未找到汉堡包按钮');
+                }
+            }, 1000);
+        });
     </script>
 </body>
 </html>

@@ -13,5 +13,8 @@
 
 - **阅读笔记**
 	- [把思考作为习惯](read-ThinkingHabits.md)
-
+	
+- **经典书籍**
+	- [道德真经注(河上公)](book-DaoDeZhenJing.md)
+	- [梅花易数](book-MeiHuaYiShu.md)
 - [**更新记录**](changelog.md)

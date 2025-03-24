@@ -1,7 +1,7 @@
-
----
 ![AI大脑](./images/aibrain.png)
 
+# 思考力让你不可替代
+---
 ## 引言
 
 现在AI技术发展的这么快，我们身边总有两种极端的声音。
@@ -159,7 +159,10 @@ AI确实很强大，但它永远替代不了会思考的人。
 
 本文同步发布于Medium：[Worried About Being Replaced by AI? Thinking Makes You Irreplaceable](https://alvin7m2.medium.com/worried-about-being-replaced-by-ai-thinking-makes-you-irreplaceable-d08fe69fc203)
 
-## Introduction
+## 英文版
+### Worried About Being Replaced by AI? Thinking Makes You Irreplaceable
+
+### Introduction
 
 With AI technology advancing at breakneck speed, we're constantly bombarded with two extreme perspectives.
 
@@ -169,7 +172,7 @@ On the flip side, we have the doomsayers spreading anxiety like wildfire, insist
 
 Today, let's cut through the noise and have a heart-to-heart talk about what AI really is, where its genuine limitations lie, why it still can't replace humans with critical thinking skills, and how we can stay irreplaceable in this rapidly evolving landscape.
 
-## I. Knowing What: What AI Can Do
+### I. Knowing What: What AI Can Do
 
 First, let's take a hard look at what current AI technology – particularly large language models (LLMs) – can actually accomplish.
 
@@ -179,7 +182,7 @@ In the design realm, it can generate images, offer UI recommendations, and spark
 
 No doubt about it – these capabilities are impressive, but to truly grasp AI's limitations, we need to peek under the hood and understand how it actually works.
 
-## II. Knowing Why: How AI Works
+### II. Knowing Why: How AI Works
 
 The market is flooded with explanations of large language models – videos, articles, academic papers – most filled with complex terms like "Transformer architecture" and "self-attention mechanism." This leaves most people's heads spinning. But here's the thing: as everyday users, we don't need to get bogged down in these technical details. Strip away the complexity, and it all boils down to "probability prediction."
 
@@ -199,7 +202,7 @@ This explains why even cutting-edge AI can stumble on elementary questions like 
 
 In essence, AI is like a world-class mimic rather than a true thinker.
 
-## III. Understanding AI's Capability Boundaries
+### III. Understanding AI's Capability Boundaries
 
 The ancient Chinese classic "Book of Rites" (《礼记·中庸》) outlines a five-step process of knowledge acquisition: "博学之，审问之，慎思之，明辨之，笃行之" – which translates to "extensive learning, careful questioning, careful thinking, clear discernment, and earnest practice."
 
@@ -213,7 +216,7 @@ As for "笃行" (earnest practice), AI completely fails. It cannot test knowledg
 
 This five-dimensional framework vividly illustrates the fundamental gap between AI and genuine human cognition.
 
-## IV. AI's Limitations
+### IV. AI's Limitations
 
 Why can't AI replace humans? The answer boils down to five fundamental limitations:
 
@@ -227,7 +230,7 @@ Fourth, AI hits a wall when confronted with scenarios outside its training data.
 
 Finally, AI cannot engage in meaningful self-reflection. It can't independently evaluate its output or improve without human guidance and feedback.
 
-## V. Master the Tool, Don't Be Mastered by It
+### V. Master the Tool, Don't Be Mastered by It
 
 To remain irreplaceable in the AI era, you need to be the one calling the shots, not the other way around.
 
@@ -241,7 +244,7 @@ Most importantly, use AI as a springboard for your own thinking, not as a replac
 
 In an age where AI is becoming ubiquitous, genuine human thought is more valuable than ever.
 
-## VI. Abilities AI Cannot Replace
+### VI. Abilities AI Cannot Replace
 
 In the AI era, five core human capabilities will make you bulletproof:
 
@@ -257,9 +260,9 @@ In the AI era, five core human capabilities will make you bulletproof:
 
 By cultivating these distinctly human abilities, you'll maintain your edge in an increasingly AI-driven world.
 
-## VII. Coexisting with AI in the Workplace
+### VII. Coexisting with AI in the Workplace
 
-### 7.1 Viewing AI as an Enhancement Tool Rather Than a Replacement
+#### 7.1 Viewing AI as an Enhancement Tool Rather Than a Replacement
 
 In the workplace, instead of seeing AI as a threat, reframe it as a powerful tool that can supercharge your workflow.
 
@@ -267,7 +270,7 @@ Leverage AI to tackle mundane, repetitive tasks, freeing your time and mental en
 
 This collaborative approach allows you to maximize your impact in the workplace while reducing the drudgery of routine tasks.
 
-### 7.2 AI Usage Strategies in the Workplace
+#### 7.2 AI Usage Strategies in the Workplace
 
 When incorporating AI into your workflow, keep this game plan in mind:
 
@@ -281,7 +284,7 @@ Fourth, double down on your uniquely human strengths. Invest in developing skill
 
 This strategic approach will help you stay ahead of the curve in the rapidly evolving AI landscape.
 
-## Conclusion
+### Conclusion
 
 AI is undeniably a game-changer, but it will never replace humans who can think critically and creatively.
 

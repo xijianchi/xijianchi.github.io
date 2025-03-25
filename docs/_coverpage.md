@@ -1,5 +1,5 @@
 
-![logo](_media/icon.svg)
+![logo](_media/pandacutout.svg)
 
 # 柒么斯的飞地 <small>1.0</small>
 

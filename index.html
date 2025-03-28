@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./lib/vue.css">
     <!-- 添加侧边栏折叠插件样式 -->
     <link rel="stylesheet" href="./lib/sidebar.min.css"/>
+    <!-- 添加脚注插件样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/footnotes.min.css">
     <!-- 添加自定义样式 -->
     <style>
         /* 使用系统默认字体，避免加载外部字体 */
@@ -164,6 +166,64 @@
             font-weight: 600;
             color: #777; /* 保持原有颜色 */
         }
+        
+        /* 自定义脚注样式 - 修改为简单箭头 */
+        /* 脚注引用样式 */
+        .footnote-ref {
+            font-size: 0.8em;
+            vertical-align: super;
+            line-height: 0;
+            color: #42b983 !important; /* 使用主题色 */
+            text-decoration: none !important;
+        }
+        
+        /* 脚注列表样式 */
+        .footnote-item {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        
+        /* 脚注返回链接样式 */
+        .footnote-backref {
+            font-size: 0.85em;
+            color: #42b983 !important; /* 使用主题色 */
+            text-decoration: none !important;
+        }
+        
+        /* 隐藏原始脚注图标并替换为简单箭头 */
+        .footnote-ref::before {
+            content: "[";
+            color: #42b983;
+        }
+        
+        .footnote-ref::after {
+            content: "]";
+            color: #42b983;
+        }
+        
+        .footnote-backref::before {
+            content: "↩";
+            color: #42b983;
+        }
+        
+        /* 隐藏原始图标 */
+        .footnote-ref img, .footnote-backref img {
+            display: none !important;
+        }
+        
+        /* 脚注标题样式 */
+        .footnotes-sep {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-top: 1px solid #eaeaea;
+        }
+        
+        .footnotes-label {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #42b983; /* 使用主题色 */
+        }
     </style>
 </head>
 <body>
@@ -216,6 +276,13 @@
                 successText: '已复制'
             },
             
+            // 脚注配置
+            footnote: {
+                title: "脚注",
+                backLink: "↩",
+                backLinkSymbol: "↩"
+            },
+            
             // 添加页脚插件
             plugins: [
                 function(hook) {
@@ -228,6 +295,15 @@
 
                     hook.afterEach(function(html) {
                         return html + footer;
+                    });
+                },
+                // 自定义脚注样式插件
+                function(hook) {
+                    hook.doneEach(function() {
+                        // 移除原始图标并应用自定义样式
+                        document.querySelectorAll('.footnote-ref img, .footnote-backref img').forEach(function(img) {
+                            img.style.display = 'none';
+                        });
                     });
                 }
             ]
@@ -243,6 +319,8 @@
     <script src="./lib/docsify-copy-code.min.js"></script>
     <!-- 添加图片缩放插件 -->
     <script src="./lib/zoom-image.min.js"></script>
+    <!-- 添加脚注插件 -->
+    <script src="https://cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script>
     
     <!-- 添加离线支持 -->
     <script>
